@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0; 
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f2f2f2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+img{
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.yellow{
+    color: #fed300;
+}
+.under-h3{
+    width: 150px;
+    height: 10px;
+    border: none;
+    background-color: #fed300;
+}
+/*SIDEBAR*/
+header .hamburger{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: -51px;
+    top: 25px;
+    padding: 12px;
+    background-color: #fed300;
+    cursor: pointer;
+}
+header .hamburger .top,
+header .hamburger .mid,
+header .hamburger .bottom{
+    width: 25px;
+    height: 3px;
+    background: #e30613;
+    transition: 0.8s;
+}
+header.open-sidebar .hamburger .top{
+    transform: rotate(45deg);
+    position: relative;
+    top: 12px;
+    width: 35px;
+}
+header.open-sidebar .hamburger .mid{
+    opacity: 0;
+}
+header.open-sidebar .hamburger .bottom{
+    transform: rotate(-45deg);
+    position: relative;
+    top: -11px;
+    width: 35px;
+}
+header#sidebar{
+    position: fixed;
+    z-index: 99;
+    background: white;
+    height: 100vh;
+    min-width: 320px;
+    text-align: left;
+    padding: 0 20px 0 30px;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    border-right: 2px solid rgb(243, 0, 0);
+}
+header#sidebar.open-sidebar{
+    transform: translateX(0%);
+}
+header#sidebar li{
+    margin-bottom: 20px;
+}
+header#sidebar li a,
+header#sidebar p{
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+header#sidebar li a:hover,
+header#sidebar p:hover{
+    color: #e30613;
+}
+header#sidebar h2 a{
+    font-family: 'Montserrat', sans-serif;
+    color: #e30613;
+    font-size: 2em;
+    font-weight: 700;
+    display: block;
+    margin: 20px 0 40px 0;
+}
+/*HEADER*/
+#home{
+    width: 100%;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #e30613;
+    padding: 45px 0;
+    font-size: 9.5em;
+    font-weight: 600;
+    text-align: center;
+}
+h1 a{
+    color: #e30613;
+}
+#home .nav-main{
+    width: 100%;
+    background-color: #e30613;
+    box-shadow: 0px 5px 15px 0px #646464;
+}
+#home .nav-main ul{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+#home .nav-main ul li a{
+    color: white;
+    font-size: 1.5em;
+    transition: 0.7s;
+}
+#home .nav-main ul li a:hover{
+    color: #fed300;
+}
+/*MAIN*/
+main{
+    width: 100%;
+}
+main .banner img{
+    width: 100%;
+    height: 750px;
+    margin-bottom: 50px;
+    box-shadow: 0px 5px 15px 0px #646464;
+}
+.who{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.who h2{
+    color: #e30613;
+    text-align: center;
+    font-size: 5.2em;
+    margin-bottom: 20px;
+}
+.who .desc{
+    width: 70%;
+    color: rgb(31, 31, 31);
+    margin: 20px auto 0 auto;
+    text-align: center;
+    font-size: 1.4em;
+}
+.who a{
+    text-align: center;
+    margin: 55px auto 0 auto;
+    background-color: #e30613;
+    padding: 15px;
+    color: #e7e7e7;
+    font-size: 1.7em;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.who a:hover{
+    box-shadow: 0px 0px 10px rgb(78, 78, 78);
+}
+/*SAME*/
+h3{
+    font-size: 3.5em;
+    color: #e30613;
+}
+.desc{
+    width: 90%;
+    color: rgb(31, 31, 31);
+    margin-top: 25px;
+    text-align: left;
+    font-size: 1.4em;
+}
+.tuto{
+    width: 90%;
+    color: rgb(31, 31, 31);
+    margin-top: 25px;
+    text-align: left;
+    font-size: 1.4em;
+}
+/*PRODUCTS*/
+#products{
+    width: 90%;
+    margin: 90px auto 0 auto;
+}
+#products .container{
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    margin: 25px auto 0 auto;
+    flex-wrap: wrap;
+}
+#products .container .bloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 25px auto 0 auto;
+    border: 1px solid rgb(112, 112, 112);
+    width: 150px;
+    height: 170px;
+    padding: 15px 10px;
+    border-radius: 20px;
+    transition: 1s;
+}
+#products .container .bloc:hover{
+    transform: translateY(-10px);
+}
+#products .container .bloc .i{
+    color: rgb(31, 31, 31);
+    font-size: 5em;
+    margin-bottom: 15px;
+}
+#products .container .bloc h4{
+    color: rgb(31, 31, 31);
+    font-weight: 400;
+    font-size: 1.9em;
+}
+/*MAGASINS*/
+#magasins{
+    width: 90%;
+    margin: 70px auto 100px auto;
+}
+.info{
+    font-size: 1.2em;
+    color: rgb(31, 31, 31);
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.info i{
+    font-size: 1.2em;
+    color: rgb(54, 98, 219);
+    margin-right: 5px;
+}
+#magasins .container{
+    width: 100%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#magasins .container .bloc{
+    width: 450px;
+    height: 220px;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    transition: 1s;
+}
+#magasins .container .bloc:hover{
+    transform: scale(105%);
+}
+#magasins .container .bloc img{
+    width: 100%;
+    height: 220px;
+    border-radius: 5px 5px 0 0;
+}
+#magasins .container .bloc h5{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background-color: #e30615cb;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 0;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    border: 1px solid #e30615cb;
+    font-weight: 400;
+}
+/*FOOTER*/
+footer{
+    width: 100%;
+    background-color: #fed300;
+    box-shadow: 0px 5px 20px 0px #5c5c5c;
+}
+footer .i{
+    margin-right: 5px;
+}
+footer .end{
+    display: flex;
+    width: 80%;
+    margin: 0 0 0 80px;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 1.2em;
+    align-items: center;
+}
+/*MEDIA QUERRIES*/
+@media (max-width: 1630px){
+    #home .nav-main ul{
+        width: 90%;
+    }
+    .who .desc{
+        width: 90%;
+    }
+    #products{
+        width: 95%;
+    }
+    #magasins{
+        width: 95%;      
+    }
+}
+@media (max-width: 1520px){
+    #products .container{
+        width: 55%;
+    }
+    #magasins .container{
+        width: 80%;
+    }
+    #magasins .container .bloc{
+        margin: 20px auto;
+    }
+}
+@media (max-width: 1398px){
+    #products .container{
+        width: 60%;
+    }
+    #magasins .container{
+        width: 95%;
+    }
+}
+@media (max-width: 1398px){
+    #products .container{
+        width: 65%;
+    }
+}
+@media (max-width: 1180px){
+    #products .container{
+        width: 70%;
+    }
+    footer .end{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1076px){
+    #products .container{
+        width: 82%;
+    }
+    #magasins .container{
+        width: 99%;
+    }
+}
+@media (max-width: 1004px){
+    h1{
+        font-size: 7em;
+    }
+    #home .nav-main ul{
+        width: 98%;
+    }
+    .who .desc{
+        width: 95%;
+    }
+    #products .container{
+        width: 89%;
+    }
+    #magasins{
+        margin: 70px auto 40px auto;
+    }
+    #magasins .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #magasins .container .bloc{
+        width: 70%;
+        height: 320px;
+    }
+    #magasins .container .bloc img{
+        height: 320px;
+    }
+}
+@media (max-width: 844px){
+    h1{
+        font-size: 6em;
+    }
+    main .banner img{
+        height: 350px;
+    }
+    #home .nav-main ul{
+        display: none;
+    }
+    .desc{
+        width: 98%;
+    }
+    .tuto{
+        width: 98%;
+    }
+    #products .container{
+        width: 99%;
+    }
+    #magasins .container .bloc{
+        width: 80%;
+        height: 310px;
+    }
+    #magasins .container .bloc img{
+        height: 310px;
+    }
+    footer .end{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 35px;
+    }
+}
+@media (max-width: 720px){
+    h1{
+        font-size: 5em;
+    }
+    .who h2{
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+    #magasins .container .bloc{
+        width: 90%;
+    }
+}
+@media (max-width: 570px){
+    h1{
+        font-size: 4em;
+    }
+    header .hamburger{
+        width: 20px;
+        height: 20px;
+        right: -42px;
+        padding: 10px;
+    }
+    header.open-sidebar .hamburger .top{
+        top: 8px;
+        width: 30px;
+    }
+    header.open-sidebar .hamburger .bottom{
+        top: -10px;
+        width: 30px;
+    }
+}
+@media (max-width: 428px){
+    header#sidebar{
+        min-width: 230px;
+        padding: 0 20px 0 10px;
+    }
+    header#sidebar h2 a{
+        font-size: 1.5em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    .desc{
+        font-size: 1.2em;
+    }
+    .tuto{
+        font-size: 1.2em;
+    }
+    .who h2{
+        font-size: 2.5em;
+    }
+    .who a{
+        padding: 10px;
+        font-size: 1.3em;
+    }
+    .who .desc{
+        font-size: 1.2em;
+    }
+    .info{
+        font-size: 1em;
+    }
+    .info i{
+        font-size: 1.1em;
+    }   
+    h3{
+        font-size: 2.5em;
+    }
+    #products .container .bloc{
+        margin: 20px auto 0 auto;
+        border: 1px solid rgb(112, 112, 112);
+        width: 130px;
+        height: 140px;
+        padding: 10px 5px;
+    }
+    #products .container .bloc .i{
+        font-size: 3em;
+    }
+    #products .container .bloc h4{
+        font-size: 1.5em;
+    }
+    #magasins .container .bloc{
+        width: 95%;
+    }
+}
+@media (max-width: 339px){
+    header#sidebar{
+        min-width: 180px;
+        padding: 0 5px 0 5px;
+    }
+    header#sidebar h2 a{
+        font-size: 1.3em;
+    }
+    h1{
+        font-size: 2.2em;
+    }
+    .who h2{
+        font-size: 2em;
+    }
+    .who a{
+        font-size: 1.2em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    #magasins .container .bloc{
+        width: 98%;
+    }
+}

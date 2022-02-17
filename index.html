@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LIBRAIRIE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Magik'Dépôt</title>
+</head>
+<body>
+    <section id="home">
+        <header id="sidebar">
+            <div class="hamburger" onclick="myFunction()">
+                <div class="top"></div>
+                <div class="mid"></div>
+                <div class="bottom"></div>
+            </div>
+            <h2><a href="./index.html">magi<span class="yellow">k'</span>dépôt</a></h2>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="#qui">Qui sommes-nous ?</a></li>
+                    <li><a href="#nos-produits">Produits</a></li>
+                    <li><a href="#nos-magasins">Nos Magasins</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="tel:+03 21 44 00 00"><span><i class="fas fa-phone-volume"></i></span>03 21 44 00 00</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1><a href="./index.html">magi<span class="yellow">k'</span>dépôt</a></h1>
+        <nav class="nav-main">
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="#qui">Qui sommes-nous ?</a></li>
+                <li><a href="#nos-produits">Produits</a></li>
+                <li><a href="#nos-magasins">Nos Magasins</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <div class="banner">
+            <img src="./img/magasin.jpg" alt="">
+        </div>
+        <div class="who">
+            <h2 id="qui">Qui <span class="yellow">sommes-</span>nous ?</h2>
+            <p class="desc">MAGIK'DÉPÔT est une chaîne de magasins spécialisée dans le destockage et la vente de produits de marques à petits prix. Nos magasins proposent un grand nombre de produits très divers et variés, de plus vous pouvez nous retrouver dans 16 villes différentes situées dans les Hauts de France alors venez nous rendre visite.</p>
+            <a href="#nos-magasins">En savoir plus sur nos magasins</a>
+        </div>
+        <section id="products">
+            <h3 id="nos-produits">Nos Produits :</h3> <hr class="under-h3">
+            <p class="desc">Comme indiqué ci-dessus les produits proposés dans nos rayons sont très divers. En effet vous retrouverez des produits pour la cuisine mais encore pour du bricolage mais encore de l'alimentaire et même des vêtements et tout cela pour des prix bas !</p>
+            <p class="tuto">Veuillez choisir ci-dessous, la catégorie qui vous intéresse pour en savoir plus sur les produits proposés :</p>
+            <div class="container">
+                <a href="./produits/produits.html#al" class="bloc">
+                    <ion-icon class="i" name="fast-food-outline"></ion-icon>
+                    <h4>Alimentaire</h4>
+                </a>
+                <a href="./produits/produits.html#br" class="bloc">
+                    <ion-icon class="i" name="hammer-outline"></ion-icon>
+                    <h4>Bricolage</h4>
+                </a>
+                <a href="./produits/produits.html#cu" class="bloc">
+                    <ion-icon class="i" name="restaurant-outline"></ion-icon>
+                    <h4>Cuisine</h4>
+                </a>
+                <a href="./produits/produits.html#di" class="bloc">
+                    <ion-icon class="i" name="apps-outline"></ion-icon>
+                    <h4>Divers</h4>
+                </a>
+                <a href="./produits/produits.html#dr" class="bloc">
+                    <ion-icon class="i" name="beaker-outline"></ion-icon>
+                    <h4>Droguerie</h4>
+                </a>
+                <a href="./produits/produits.html#hy" class="bloc">
+                    <ion-icon class="i" name="flower-outline"></ion-icon>
+                    <h4>Hygiène</h4>
+                </a>
+                <a href="./produits/produits.html#jo" class="bloc">
+                    <ion-icon class="i" name="game-controller-outline"></ion-icon>
+                    <h4>Jouets</h4>
+                </a>
+                <a href="./produits/produits.html#ve" class="bloc">
+                    <ion-icon class="i" name="shirt-outline"></ion-icon>
+                    <h4>Vêtements</h4>
+                </a>
+            </div>
+        </section>
+        <section id="magasins">
+            <h3 id="nos-magasins">Nos magasins :</h3> <hr class="under-h3">
+            <p class="desc">Vous souhaitez nous rendre visite ou nous contacter ? Dans ce cas voici la liste de nos magasins ainsi que la ville dans laquelle ils se trouvent.</p>
+            <p class="tuto">Veuillez sélectionner le magasin de votre choix pour connaître ses horaires, ses coordonnées et pour le contacter si vous le souhaitez.</p>
+            <p class="info"><i class="fas fa-info-circle"></i>Les magasins sont classés dans l'ordre alphabétique afin faciliter votre recherche.</p>
+            <div class="container">
+                <a href="./magasins/Abbeville.html" class="bloc">
+                    <img src="./img/ab.jpg" alt="magasin abbeville magik depot">
+                    <h5>Abbeville</h5>
+                </a>
+                <a href="./magasins/Bailleul.html" class="bloc">
+                    <img src="./img/ba.jpg" alt="magasin abbeville magik depot">
+                    <h5>Bailleul</h5>
+                </a>
+                <a href="./magasins/Bruay.html" class="bloc">
+                    <img src="./img/br.jpg" alt="magasin abbeville magik depot">
+                    <h5>Bruay la Buissière</h5>
+                </a>
+                <a href="./magasins/Cambrai.html" class="bloc">
+                    <img src="./img/cam.jpg" alt="magasin abbeville magik depot">
+                    <h5>Cambrai</h5>
+                </a>
+                <a href="./magasins/Carvin.html" class="bloc">
+                    <img src="./img/car.jpg" alt="magasin abbeville magik depot">
+                    <h5>Carvin</h5>
+                </a>
+                <a href="./magasins/Coquelles.html" class="bloc">
+                    <img src="./img/co.jpg" alt="magasin abbeville magik depot">
+                    <h5>Coquelles</h5>
+                </a>
+                <a href="./magasins/Denain.html" class="bloc">
+                    <img src="./img/de.jpg" alt="magasin abbeville magik depot">
+                    <h5>Denain</h5>
+                </a>
+                <a href="./magasins/Dunkerque.html" class="bloc">
+                    <img src="./img/du.jpg" alt="magasin abbeville magik depot">
+                    <h5>Dunkerque</h5>
+                </a>
+                <a href="./magasins/Fayet.html" class="bloc">
+                    <img src="./img/fa.jpg" alt="magasin abbeville magik depot">
+                    <h5>Fayet</h5>
+                </a>
+                <a href="./magasins/Hautmont.html" class="bloc">
+                    <img src="./img/ha.jpg" alt="magasin abbeville magik depot">
+                    <h5>Hautmont</h5>
+                </a>
+                <a href="./magasins/La-Sentinelle.html" class="bloc">
+                    <img src="./img/las.jpg" alt="magasin abbeville magik depot">
+                    <h5>La Sentinelle</h5>
+                </a>
+                <a href="./magasins/Lambersart.html" class="bloc">
+                    <img src="./img/lam.jpg" alt="magasin abbeville magik depot">
+                    <h5>Lambersart</h5>
+                </a>
+                <a href="./magasins/Lievin.html" class="bloc">
+                    <img src="./img/li.jpg" alt="magasin abbeville magik depot">
+                    <h5>Liévin</h5>
+                </a>
+                <a href="./magasins/Lys-lez-Lannoy.html" class="bloc">
+                    <img src="./img/lys.jpg" alt="magasin abbeville magik depot">
+                    <h5>Lys-lez-Lannoy</h5>
+                </a>
+                <a href="./magasins/Tilloy-les-Mofflaines.html" class="bloc">
+                    <img src="./img/ti.jpg" alt="magasin abbeville magik depot">
+                    <h5>Tilloy-lès-Mofflaines</h5>
+                </a>
+            </div>
+        </section>
+    </main>
+        <footer>
+            <div class="end">
+                <p id="contact">Copyright © 2022 Magik'dépôt, tous droits réservés.</p>
+                <a href="tel:+03 21 44 00 00"><span><ion-icon class="i" name="call"></ion-icon></ion-icon></span>03 21 44 00 00</a>
+                <a href="#">Mentions légales</a>
+            </div>
+        </footer>
+    <script>
+        function myFunction() {
+        document.getElementById('sidebar').classList.toggle("open-sidebar");
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
