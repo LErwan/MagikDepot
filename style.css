@@ -310,6 +310,10 @@ footer .end{
     font-size: 1.2em;
     align-items: center;
 }
+footer .end a,
+footer .end p{
+    text-align: center;
+}
 /*MEDIA QUERRIES*/
 @media (max-width: 1630px){
     #home .nav-main ul{
